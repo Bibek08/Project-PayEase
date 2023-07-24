@@ -1,0 +1,93 @@
+.container-nav {
+  background-color: #f4f4f4;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.profiletoptext {
+  margin-top: 5px;
+  margin-left: 5px;
+  font-size: 25px;
+}
+.searchbox {
+  width: 300%;
+  margin-top: 15px;
+  border-radius: 8px;
+  padding: 4px 5px;
+}
+.top-nav {
+  padding: 5px 10px;
+  background-color: #d9d9d9;
+  margin: 0;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.imgrole {
+  display: flex;
+}
+.imgrole img {
+  border-radius: 360px;
+}
+.profile {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-top: 20px;
+  background-color: #f4f4f4;
+}
+.profile img {
+  margin-left: 10px;
+  border-radius: 360px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.profile h5 {
+  margin-left: 10px;
+}
+.uploadbutton {
+  padding: 3px 3px;
+  margin-left: 10px;
+  border-radius: 5px;
+  margin-bottom: 8px;
+  background-color: lightskyblue;
+}
+.profile-detail {
+  width: 65%;
+  background-color: #f4f4f4;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.profile-detail h4 {
+  text-decoration: underline;
+}
+.profile-detail-content {
+  margin-top: 220px;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+.main-detail {
+  display: grid;
+  
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px; /* Adjust the gap between columns as desired */
+}
+/*.........social links.........*/
+.social-links {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.social-links a button {
+  margin-right: 3px;
+  color: #f4f4f4;
+  border-radius: 5px;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+.fb {
+  background-color:#1877F2;
+}
+.twit{
+background-color: #1DA1F2;
+}
+.insta{
+  background-color: #833AB4;
+}

@@ -1,38 +1,223 @@
-.App {
-  text-align: center;
+/* ..........................sidebar............................. */
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+.container-sidebar {
+  display: flex;
+  width: 100%;
+  position: fixed;
+}
+main {
+  width: 100%;
+  padding: 20px;
+}
+.sidebar {
+  background-color: #224952;
+  color: white;
+  height: 100vh;
+  width: 300px;
+  transition: all 0.5s;
+}
+.top_section {
+  display: flex;
+  align-items: center;
+  padding: 20px 15px;
+}
+.logo {
+  font-size: 30px;
+  padding-bottom: 40px;
+}
+.bars {
+  display: flex;
+  font-size: 25px;
+  margin-left: 50px;
+  padding-bottom: 40px;
+}
+.link {
+  display: flex;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  gap: 15px;
+  transition: all 0.5s;
+}
+.link:hover {
+  background-color: lightskyblue;
+  color: black;
+  transition: all 0.5s;
+}
+.active {
+  background: lightskyblue;
+  color: black;
+}
+.icon,
+.link_text {
+  font-size: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* ..............................login page............................ */
+.form-container {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  padding-left: 0px !important;
+}
+.login {
+  width: 5px;
+}
+.rowpad {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+.form-container form {
+  width: 100%;
+  padding: 0px 60px;
 }
 
-.App-link {
-  color: #61dafb;
+.login-template {
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  background-color: rgb(6, 121, 244);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.front-img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.form-control {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.loginbutton {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+/*.............animation...............*/
+@keyframes imageUpAndDownAnimation {
+  0%,
+  100% {
+    transform: translateY(0);
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    transform: translateY(
+      -20px
+    ); /* Adjust the value for desired vertical move */
   }
+}
+.image-animation {
+  animation: imageUpAndDownAnimation 2s infinite; /* Adjust the duration */
+}
+
+/*.................Create student ......................*/
+.submitBtn {
+  margin-top: 15px;
+}
+
+/*............Accountant..............*/
+.accountant-container {
+  margin-top: 35px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.accountantdetailtop {
+  display: flex;
+  justify-content: space-between;
+}
+.accountantdetailtop button {
+  border-radius: 10px;
+  padding: 3px 5px;
+  margin-top: 5px;
+  margin-right: 20px;
+  background-color: lightskyblue;
+  border-style: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.accountant-table {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  width: 97%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.accountant-table thead,
+.accountant-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+.accountant-table thead {
+  background-color: lightskyblue;
+}
+.accountant-table button {
+  margin-right: 5px;
+  border-radius: 3px;
+  border-style: none;
+}
+/*..............edit button ............*/
+.acc_edit {
+  background-color: #90bdff;
+  padding: 2px 5px;
+}
+/*..................delete button .............*/
+.acc_dlt {
+  background-color: red;
+  padding: 2px 5px;
+  margin-left: 5px;
+}
+.acc_details {
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border-style: none;
+  padding: 3px 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+/*............fee structure.............*/
+.edit {
+  /*action button */
+  padding: 3px 8px;
+  border-radius: 5px;
+  text-align: center;
+}
+.edit:hover {
+  background-color: lightskyblue;
+}
+
+.table-container h5 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+.paynow {
+  margin-top: 10px;
+  border-radius: 10px;
+  background-color: lightskyblue;
+  padding: 5px 10px;
+  border: 1px solid black;
+  font-size: 20px;
+}
+/*......................notification.............*/
+.notification-container h3 {
+  margin-bottom: 10px;
+}
+.pay-detail {
+  border: 2px solid black;
+  border-radius: 4px;
+  margin-bottom: 5px;
+}
+.seepaydetail {
+  padding: 3px 8px;
+  border-radius: 10px;
+}
+.seepaydetail:hover {
+  color: blue;
 }
